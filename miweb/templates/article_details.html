@@ -1,0 +1,106 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<script type="application/ld+json">
+    {
+      "@context": "http://schema.org/",
+      "@type": "Product",
+      "name": "Opiniones",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.7",
+        "bestRating": "5",
+        "worstRating": "0",
+        "ratingCount": "500"
+      },
+      "reviews": [{
+      "@context": "http://schema.org/",
+      "@type": "Review",
+      "name": "Buena guia, me sirvio en mi viaje por andalucía y más concretamente por cadiz",
+      "reviewBody": "Una buena guía básica para poder ver los sitios más importantes de cádiz y alrededores",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "4.8",
+        "bestRating": "5",
+        "worstRating": "0"
+      },
+      "datePublished": "2021-04-09",
+      "author": {
+        "@type": "Person",
+        "name": "Julio Pozo"
+      }
+    },{
+      "@context": "http://schema.org/",
+      "@type": "Review",
+      "name": "Buena guía",
+      "reviewBody": "Guia básica, pero no sirvió para poder conocer más Cadiz",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "4.7",
+        "bestRating": "5",
+        "worstRating": "0"
+      },
+      "datePublished": "2021-04-09",
+      "author": {
+        "@type": "Person",
+        "name": "Sara Silva"
+      }
+    },{
+      "@context": "http://schema.org/",
+      "@type": "Review",
+      "name": "Me encanto Cadiz",
+      "reviewBody": "A través de Blog encontramos esta pequeña guia de que ver por Cadiz y nos encanto el video.",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "4.8",
+        "bestRating": "5",
+        "worstRating": "0"
+      },
+      "datePublished": "2021-04-09",
+      "author": {
+        "@type": "Person",
+        "name": "Giselle García"
+      }
+    },{
+      "@context": "http://schema.org/",
+      "@type": "Review",
+      "name": "{{ post.title_review_product }}",
+      "reviewBody": "Ya he tenido distintas experiencias viajando a Cadiz con distintas compañías por medio de Pepecar y me ha ido súper bien, de verdad lo recomiendo.",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "4.8",
+        "bestRating": "5",
+        "worstRating": "0"
+      },
+      "datePublished": "2021-04-09",
+      "author": {
+        "@type": "Person",
+        "name": "Alejandro Sánchez"
+      }
+    }]
+    }
+  </script>
+
+<div class="container">
+    <div class="card" style="width: 18rem;">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+        <h5 class="card-title">{{ post.title }}</h5>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <body>{{ post.body|safe }}</body>
+</div>
+
+
+<button>pepecar</button>
+<a href=""<img src="" alt="pepecar">
+
+<br>
+<br>
+<a href="{% url 'home' %}">Home</a>
+
+
+{% endblock content %}

@@ -1,0 +1,424 @@
+{% load static %}
+{% load bootstrap %}
+
+
+
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<head>
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="author" content="SemiColonWeb" />
+
+	<!-- Stylesheets
+	============================================= -->
+	<link
+		href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Poppins:300,400,500,600,700|PT+Serif:400,400i&display=swap"
+		rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="{% static '/css/bootstrap.css' %}" type="text/css" />
+	<link rel="stylesheet" href="{% static '/style.css' %}" type="text/css" />
+	<link rel="stylesheet" href="{% static '/css/dark.css' %}" type="text/css" />
+	<link rel="stylesheet" href="{% static '/css/font-icons.css' %}" type="text/css" />
+	<link rel="stylesheet" href="{% static '/css/animate.css' %}" type="text/css" />
+	<link rel="stylesheet" href="{% static '/css/magnific-popup.css' %}" type="text/css" />
+
+	<link rel="stylesheet" href="{% static '/css/custom.css' %}" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<!-- eCommerce Demo Specific Stylesheet -->
+	<link rel="stylesheet" href="{% static '/ecommerce/ecommerce.css' %}" type="text/css" />
+	<link rel="stylesheet" href="{% static '/ecommerce/css/fonts.css' %}" type="text/css" />
+	<!-- / -->
+
+	<!-- Range Slider CSS -->
+	<link rel="stylesheet" href="{% static 'css/components/ion.rangeslider.css' %}" type="text/css" />
+
+	<link rel="stylesheet" href="{% static '/css/font-icons.css' %}" type="text/css" />
+	<link rel="stylesheet" href="{% static '/css/animate.css' %}" type="text/css" />
+	<link rel="stylesheet" href="{% static '/css/magnific-popup.css' %}" type="text/css" />
+
+	<link rel="stylesheet" href="{% static '/css/custom.css' %}" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<link rel="stylesheet" href="{% static '/css/colors.php?color=000000' %}" type="text/css" />
+
+	<!-- Document Title
+	============================================= -->
+	<title>Vinos | AL</title>
+
+</head>
+
+<body class="stretched">
+
+	<!-- Document Wrapper
+	============================================= -->
+	<div id="wrapper" class="clearfix">
+
+		<!-- Header
+		============================================= -->
+		<header id="header" class="full-header">
+			<div id="header-wrap">
+				<div class="container">
+					<div class="header-row">
+
+						<!-- Logo
+						============================================= -->
+						<div id="logo">
+							<a href="/miweb" class="standard-logo" data-dark-logo="images/logo-dark.png"><img
+									src="{% static '/images/logo.png' %}" alt="Canvas Logo"></a>
+							<a href="/miweb" class="retina-logo" data-dark-logo="images/logo-dark@2x.png"><img
+									src="{% static '/images/logo@2x.png' %}" alt="Canvas Logo"></a>
+						</div><!-- #logo end -->
+
+						<div class="header-misc">
+
+							<!-- Top Search
+							============================================= -->
+							<div id="top-search" class="header-misc-icon">
+								<a href="#" id="top-search-trigger"><i class="icon-line-search"></i><i
+										class="icon-line-cross"></i></a>
+							</div><!-- #top-search end -->
+
+							<!-- Top Cart
+							============================================= -->
+							<div id="top-cart" class="header-misc-icon d-none d-sm-block">
+								<a href="#" id="top-cart-trigger"><i class="icon-line-bag"></i><span
+										class="top-cart-number">5</span></a>
+								<div class="top-cart-content">
+									<div class="top-cart-title">
+										<h4>Shopping Cart</h4>
+									</div>
+									<div class="top-cart-items">
+										<div class="top-cart-item">
+											<div class="top-cart-item-image">
+												<a href="#"><img src="{% static '/images/shop/small/1.jpg' %}"
+														alt="Blue Round-Neck Tshirt" /></a>
+											</div>
+											<div class="top-cart-item-desc">
+												<div class="top-cart-item-desc-title">
+													<a href="#">Blue Round-Neck Tshirt with a Button</a>
+													<span class="top-cart-item-price d-block">$19.99</span>
+												</div>
+												<div class="top-cart-item-quantity">x 2</div>
+											</div>
+										</div>
+										<div class="top-cart-item">
+											<div class="top-cart-item-image">
+												<a href="#"><img src="{% static '/images/shop/small/6.jpg' %}"
+														alt="Light Blue Denim Dress" /></a>
+											</div>
+											<div class="top-cart-item-desc">
+												<div class="top-cart-item-desc-title">
+													<a href="#">Light Blue Denim Dress</a>
+													<span class="top-cart-item-price d-block">$24.99</span>
+												</div>
+												<div class="top-cart-item-quantity">x 3</div>
+											</div>
+										</div>
+									</div>
+									<div class="top-cart-action">
+										<span class="top-checkout-price">$114.95</span>
+										<a href="#" class="button button-3d button-small m-0">View Cart</a>
+									</div>
+								</div>
+							</div><!-- #top-cart end -->
+
+						</div>
+
+						<div id="primary-menu-trigger">
+							<svg class="svg-trigger" viewBox="0 0 100 100">
+								<path
+									d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20">
+								</path>
+								<path d="m 30,50 h 40"></path>
+								<path
+									d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20">
+								</path>
+							</svg>
+						</div>
+
+						<!-- Primary Navigation
+						============================================= -->
+						<nav class="primary-menu">
+
+							<ul class="menu-container">
+								<li class="menu-item">
+									<a class="menu-link" href="index.html">
+										<div>Home</div>
+									</a>
+									<ul class="sub-menu-container">
+										<li class="menu-item">
+											<a class="menu-link" href="intro.html#section-niche">
+												<div>Niche Demos</div>
+											</a>
+										</li>
+										<li class="menu-item">
+											<a class="menu-link" href="intro.html#section-onepage">
+												<div>One-Page Demos</div>
+											</a>
+										</li>
+										<li class="menu-item">
+											<a class="menu-link" href="index-corporate.html">
+												<div>Home - Corporate</div>
+											</a>
+											<ul class="sub-menu-container">
+												<li class="menu-item">
+													<a class="menu-link" href="index-corporate.html">
+														<div>Corporate - Layout 1</div>
+													</a>
+												</li>
+												<li class="menu-item">
+													<a class="menu-link" href="index-corporate-2.html">
+														<div>Corporate - Layout 2</div>
+													</a>
+												</li>
+												<li class="menu-item">
+													<a class="menu-link" href="index-corporate-3.html">
+														<div>Corporate - Layout 3</div>
+													</a>
+												</li>
+												<li class="menu-item">
+													<a class="menu-link" href="index-corporate-4.html">
+														<div>Corporate - Layout 4</div>
+													</a>
+												</li>
+											</ul>
+										</li>
+									</ul>
+
+						</nav><!-- #primary-menu end -->
+					</div>
+				</div>
+			</div>
+			<div class="header-wrap-clone"></div>
+		</header><!-- #header end -->
+
+		<body>
+
+			{% block content %}
+
+			{% endblock content %}
+
+			<!-- Footer
+		============================================= -->
+			<footer id="footer" class="border-0 bg-transparent">
+
+				<div class="container clearfix">
+
+					<!-- Footer Widgets
+				============================================= -->
+					<div class="footer-widgets-wrap clearfix" style="padding: 60px 0 100px;">
+
+						<div class="row">
+							<div class="col-lg-6 col-md-6">
+
+								<div class="row clearfix">
+									<div class="col-lg-6">
+										<div class="widget widget_links widget-li-noicon">
+											<h4>Hire</h4>
+											<ul>
+												<li><a href="#">Documentation</a></li>
+												<li><a href="#">Feedback</a></li>
+												<li><a href="#">Plugins</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="col-lg-6">
+										<div class="widget widget_links widget-li-noicon">
+											<h4>Community</h4>
+											<ul>
+												<li><a href="#">Documentation</a></li>
+												<li><a href="#">Feedback</a></li>
+												<li><a href="#">Plugins</a></li>
+												<li><a href="#">Support Forums</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+								<div class="clear"></div>
+
+								<div class="line line-sm"></div>
+
+								<div class="copy-link"><a href="mailto:noreply@canvas.com"><i
+											class="icon-envelope2"></i> info@canvas.com</a> <span class="middot"> |
+									</span> <a href="tel:+1-11-6541-6369"><i class="icon-headphones"></i>
+										+1-11-6541-6369</a> <span class="middot"> | </span> <a
+										href="skype:CanvasOnSkype?call"><i class="icon-skype2"></i> CanvasOnSkype</a>
+								</div>
+
+							</div>
+
+							<div class="col-lg-5 offset-lg-1">
+
+								<div class="widget">
+									<h4>Connect Socially</h4>
+
+									<div class="bottommargin-sm clearfix">
+										<a href="#" class="social-icon si-dark si-mini si-rounded si-facebook"
+											title="Facebook">
+											<i class="icon-facebook"></i>
+											<i class="icon-facebook"></i>
+										</a>
+
+										<a href="#" class="social-icon si-dark si-mini si-rounded si-twitter"
+											title="Twitter">
+											<i class="icon-twitter"></i>
+											<i class="icon-twitter"></i>
+										</a>
+
+										<a href="#" class="social-icon si-dark si-mini si-rounded si-instagram"
+											title="Instagram">
+											<i class="icon-instagram"></i>
+											<i class="icon-instagram"></i>
+										</a>
+
+										<a href="#" class="social-icon si-dark si-mini si-rounded si-pinterest"
+											title="Pinterest">
+											<i class="icon-pinterest"></i>
+											<i class="icon-pinterest"></i>
+										</a>
+
+										<a href="#" class="social-icon si-dark si-mini si-rounded si-vimeo"
+											title="Vimeo">
+											<i class="icon-vimeo"></i>
+											<i class="icon-vimeo"></i>
+										</a>
+									</div>
+								</div>
+
+								<div class="widget subscribe-widget mt-0 clearfix">
+									<h5><strong>Subscribe</strong> to Our Newsletter to get Important News, Amazing
+										Offers &amp; Inside Scoops:</h5>
+									<div class="widget-subscribe-form-result"></div>
+									<form id="widget-subscribe-form" action="include/subscribe.php" method="post"
+										class="mb-0">
+										<div class="input-group input-group-lg mx-auto">
+											<input type="email" id="widget-subscribe-form-email"
+												name="widget-subscribe-form-email" class="form-control required email"
+												placeholder="Enter your Email">
+											<div class="input-group-append">
+												<button
+													class="button button-black font-weight-light button-dark ls2 text-uppercase"
+													type="submit">Subscribe</button>
+											</div>
+										</div>
+									</form>
+								</div>
+
+							</div>
+						</div>
+
+					</div><!-- .footer-widgets-wrap end -->
+
+				</div>
+
+			</footer><!-- #footer end -->
+
+	</div><!-- #wrapper end -->
+
+	<!-- Go To Top
+	============================================= -->
+	<div id="gotoTop" class="icon-line-arrow-up"></div>
+
+	<!-- JavaScripts
+	============================================= -->
+	<script src="{% static '/js/jquery.js' %}"></script>
+	<script src="{% static '/js/plugins.min.js' %}"></script>
+
+	<!-- Footer Scripts
+	============================================= -->
+	<script src="{% static '/js/functions.js' %}"></script>
+
+	<!-- Range Slider Plugin -->
+	<script src="{% static 'js/components/rangeslider.min.js' %}"></script>
+
+	<script>
+
+		// Topbar Hide
+		$('#top-bar').on('click', '#close-bar', function () {
+			$(this).parents('#top-bar').slideUp(300);
+			$('body').css('padding-top', 0);
+		})
+
+		jQuery(window).on('pluginCarouselReady', function () {
+			// Custom Carousel
+			$('.owl-carousel').owlCarousel({
+				items: 1,
+				dotsContainer: '#item-color-dots',
+				loop: true,
+			});
+		});
+	</script>
+
+	<script>
+
+		var priceRangefrom = 0,
+			priceRangeto = 0,
+			$container = null;
+
+		jQuery(window).on('load', function () {
+
+			$container = $('#shop');
+
+			$container.isotope({ transitionDuration: '0.65s' });
+
+			$('.grid-filter a').click(function () {
+				$('.grid-filter li').removeClass('activeFilter');
+				$(this).parent('li').addClass('activeFilter');
+				var selector = $(this).attr('data-filter');
+				$container.isotope({ filter: selector });
+				return false;
+			});
+
+			$(window).resize(function () {
+				$container.isotope('layout');
+			});
+
+		});
+
+		jQuery(document).ready(function ($) {
+
+			$(".range_23").ionRangeSlider({
+				type: "double",
+				min: 1.99,
+				max: 69.99,
+				from: 1.99,
+				to: 69.99,
+				prefix: '€',
+				hide_min_max: true,
+				hide_from_to: false,
+				grid: false,
+				onStart: function (data) {
+					priceRangefrom = data.from;
+					priceRangeto = data.to;
+				},
+				onFinish: function (data) {
+					priceRangefrom = data.from;
+					priceRangeto = data.to;
+
+					$container.isotope({
+						filter: function () {
+
+							if ($(this).find('.product-price').find('ins').length > 0) {
+								var price = $(this).find('.product-price ins').text();
+							} else {
+								var price = $(this).find('.product-price').text();
+							}
+
+							priceNum = price.split("€");
+
+							return (priceRangefrom <= priceNum[1] && priceRangeto >= priceNum[1]);
+						}
+					});
+
+				}
+			});
+
+		});
+
+	</script>
+</body>
+
+</html>
