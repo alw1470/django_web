@@ -35,14 +35,3 @@ class DatosScrapy(models.Model):
     def save(self, *args, **kwargs):
         self.slug = slugify(self.title)
         super(DatosScrapy, self).save(*args, **kwargs)
-
-# def set_slug(sender, instance, *args, **kwargs):
-#     if instance.slug:
-#         return
-#         id = str(uuid.uuid4())
-#         instance.slug = slugify('{}-{}'. format(
-#             instance.title, id[:8]
-#         ))
-
-
-# pre_save.connect(set_slug, sender=DatosScrapy)
