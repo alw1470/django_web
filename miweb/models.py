@@ -35,3 +35,4 @@ class DatosScrapy(models.Model):
     def save(self, *args, **kwargs):
         self.slug = slugify(self.title)
         super(DatosScrapy, self).save(*args, **kwargs)
+        
