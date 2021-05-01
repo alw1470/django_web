@@ -47,7 +47,8 @@ INSTALLED_APPS = [
     'ckeditor',
     'raspador.apps.RaspadorConfig',
     'django_filters',
-    'bootstrapform'
+    'bootstrapform',
+    'import_export'
 
 ]
 
@@ -129,5 +130,6 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
+
 
 STATIC_URL = '/static/'

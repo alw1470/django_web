@@ -21,6 +21,7 @@ class HomeView(FilterView, ListView):
         context['filter'] =DatosScrapyFilter(self.request.GET, queryset=self.get_queryset())
         return context
 
+
 class ArticleDetailView(ListView):
     model = DatosScrapy
     template_name = 'demo-ecommerce.html'

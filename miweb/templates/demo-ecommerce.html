@@ -1,97 +1,29 @@
 {% extends 'base.html' %}
+{% load static %}
 {% load bootstrap %}
 
 {% block content %}
 		<!-- Slider
 		============================================= -->
-		<section id="slider" class="slider-element swiper_wrapper min-vh-40 min-vh-md-75" data-autoplay="9000" data-speed="800" data-loop="true" data-grab="false">
+		<section id="slider" class="slider-element min-vh-100 page-section slide-img include-header" data-animate="img-to-right" style="background: url({% static '/ecommerce/images/slider/1.jpg' %}) center center no-repeat; background-size: cover;">
+			<div class="slider-inner">
 
-			<div class="swiper-container swiper-parent">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide">
-						<div class="container">
-							<div class="slider-caption" style="margin-top: -30px;">
-								<div class="emphasis-title mb-0">
-									<h2 class="bottommargin font-weight-bold" style="max-width: 600px; font-size: 80px; font-family: 'Montserrat'; line-height: 1.2;">We Create<br>diff. Websites</h2>
-
-									<p class="lead topmargin-sm d-none d-md-block" style="max-width: 600px; font-family: 'Poppins'; color: #999; font-size: 18px;">Competently reintermediate user friendly scenarios after global synergy. Globally build compelling niche markets rather than bricks-and-clicks alignments. Continually revolutionize interactive strategic theme.</p>
+				<div class="vertical-middle">
+					<div class="container dark">
+						<div class="row">
+							<div class="col-lg-6 col-md-8 dotted-bg parallax" data-start="top: 0px; opacity: 1" data-400="top: 50px; opacity: 0.3">
+								<div class="emphasis-title" data-animate="fadeInUp">
+									<h1 class="font-border">Al | Vinos  </h1>
 								</div>
+								<p class="lead text-grey-50" data-animate="fadeInUp" data-delay="100">Encuentra el mejor precio para tus vinos.</p>
+								<a href="/miweb/search" class="button button-large button-rounded px-4 button-reveal d-inline-flex tright font-weight-semibold" data-animate="fadeInUp" data-delay="300"><i class="icon-line-arrow-right"></i><span>Buscar Vinos</span></a>
 							</div>
 						</div>
-						<div class="slide-number font-primary">O1</div>
-						<div class="swiper-slide-bg" style="background: #FFF url('demos/ecommerce/images/slider/1.jpg') no-repeat center right; background-size: auto 100%;"></div>
-					</div>
-					<div class="swiper-slide">
-						<div class="container">
-							<div class="slider-caption" style="margin-top: -30px;">
-								<div class="emphasis-title mb-0">
-									<h2 class="bottommargin font-weight-bold" style="max-width: 600px; font-size: 80px; font-family: 'Montserrat'; line-height: 1.2;">We Create<br>diff. Designs</h2>
-
-									<p class="lead topmargin-sm d-none d-md-block" style="max-width: 600px; font-family: 'Poppins'; color: #999; font-size: 18px;">Competently reintermediate user friendly scenarios after global synergy. Globally build compelling niche markets rather than bricks-and-clicks alignments. Continually revolutionize interactive strategic theme.</p>
-								</div>
-							</div>
-						</div>
-						<div class="slide-number font-primary">O2</div>
-						<div class="swiper-slide-bg" style="background: #FFF url('demos/ecommerce/images/slider/2.jpg') no-repeat center right; background-size: auto 100%;"></div>
-					</div>
-					<div class="swiper-slide">
-						<div class="container">
-							<div class="slider-caption" style="margin-top: -30px;">
-								<div class="emphasis-title mb-0">
-									<h2 class="bottommargin font-weight-bold" style="max-width: 600px; font-size: 80px; font-family: 'Montserrat'; line-height: 1.2;">We Create<br>diff. Layouts</h2>
-
-									<p class="lead topmargin-sm d-none d-md-block" style="max-width: 600px; font-family: 'Poppins'; color: #999; font-size: 18px;">Competently reintermediate user friendly scenarios after global synergy. Globally build compelling niche markets rather than bricks-and-clicks alignments. Continually revolutionize interactive strategic theme.</p>
-								</div>
-							</div>
-						</div>
-						<div class="slide-number font-primary">O3</div>
-						<div class="swiper-slide-bg" style="background: #FFF url('demos/ecommerce/images/slider/3.jpg') no-repeat center right; background-size: auto 100%;"></div>
-					</div>
-					<div class="swiper-slide">
-						<div class="container">
-							<div class="slider-caption" style="margin-top: -30px;">
-								<div class="emphasis-title mb-0">
-									<h2 class="bottommargin font-weight-bold" style="max-width: 600px; font-size: 80px; font-family: 'Montserrat'; line-height: 1.2;">We Create<br>diff. Mindset</h2>
-
-									<p class="lead topmargin-sm d-none d-md-block" style="max-width: 600px; font-family: 'Poppins'; color: #999; font-size: 18px;">Competently reintermediate user friendly scenarios after global synergy. Globally build compelling niche markets rather than bricks-and-clicks alignments. Continually revolutionize interactive strategic theme.</p>
-								</div>
-							</div>
-						</div>
-						<div class="slide-number font-primary">O4</div>
-						<div class="swiper-slide-bg" style="background: #FFF url('demos/ecommerce/images/slider/4.jpg') no-repeat center right; background-size: auto 100%;"></div>
-					</div>
-					<div class="swiper-slide">
-						<div class="container">
-							<div class="slider-caption" style="margin-top: -30px;">
-								<div class="emphasis-title mb-0">
-									<h2 class="bottommargin font-weight-bold" style="max-width: 600px; font-size: 80px; font-family: 'Montserrat'; line-height: 1.2;">We Create<br>your Website</h2>
-
-									<p class="lead topmargin-sm d-none d-md-block" style="max-width: 600px; font-family: 'Poppins'; color: #999; font-size: 18px;">Competently reintermediate user friendly scenarios after global synergy. Globally build compelling niche markets rather than bricks-and-clicks alignments. Continually revolutionize interactive strategic theme.</p>
-								</div>
-							</div>
-						</div>
-						<div class="slide-number font-primary">O5</div>
-						<div class="swiper-slide-bg" style="background: #FFF url('demos/ecommerce/images/slider/5.jpg') no-repeat center right; background-size: auto 100%;"></div>
-					</div>
-					<div class="swiper-slide">
-						<div class="container">
-							<div class="slider-caption" style="margin-top: -30px;">
-								<div class="emphasis-title mb-0">
-									<h2 class="bottommargin font-weight-bold" style="max-width: 600px; font-size: 80px; font-family: 'Montserrat'; line-height: 1.2;">We Create<br>your Home</h2>
-
-									<p class="lead topmargin-sm d-none d-md-block" style="max-width: 600px; font-family: 'Poppins'; color: #999; font-size: 18px;">Competently reintermediate user friendly scenarios after global synergy. Globally build compelling niche markets rather than bricks-and-clicks alignments. Continually revolutionize interactive strategic theme.</p>
-								</div>
-							</div>
-						</div>
-						<div class="slide-number font-primary">O6</div>
-						<div class="swiper-slide-bg" style="background: #FFF url('demos/ecommerce/images/slider/6.jpg') no-repeat center right; background-size: auto 100%;"></div>
 					</div>
 				</div>
-				<div class="slider-arrow-left"><i class="icon-line-arrow-left"></i></div>
-				<div class="slider-arrow-right"><i class="icon-line-arrow-right"></i></div>
-			</div>
 
-		</section><!-- #Slider End -->
+			</div>
+		</section>
 
 		<!-- Content
 		============================================= -->
@@ -100,38 +32,6 @@
 
 				<div class="section mt-0"  style="padding: 100px 0;">
 					<div class="container">
-
-						<div class="row grid-item">
-							<div class="col-md-2 grid-image">
-								<img src="demos/ecommerce/images/categories/1.jpg" alt="Image 1">
-							</div>
-							<div class="col-md-2">
-								<div class="grid-info clearfix">
-									<h3><a href="#">Fresh Arrivals<span>Summer is Coming!</span></a></h3>
-									<a href="#" class="more-link clearfix">Shop Now</a>
-								</div>
-							</div>
-							<div class="col-md-2 grid-image">
-								<img src="demos/ecommerce/images/categories/2.jpg" alt="Image 1">
-							</div>
-							<div class="col-md-2">
-								<div class="grid-info clearfix">
-									<h3><a href="#">Acessories<span>Check out more Products for your Lifestyles</span></a></h3>
-									<a href="#" class="more-link clearfix">Know More</a>
-								</div>
-							</div>
-
-							<div class="col-md-2 grid-image">
-								<img src="demos/ecommerce/images/categories/3.jpg" alt="Image 1">
-							</div>
-							<div class="col-md-2">
-								<div class="grid-info clearfix">
-									<h3><a href="#">Our Store<span>Where we Manufacture!</span></a></h3>
-									<i class="icon-map-marker2"></i> <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2233.681463596743!2d-3.19397378404521!3d55.954892680607855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4887c78e1e83edab%3A0x627ac6bc4414f18b!2sGucci+-+Edinburgh+Harvey+Nichols+Women&#39;s!5e0!3m2!1sen!2sus!4v1489749205966" data-lightbox="iframe"  class="more-link clearfix">Find Store</a>
-								</div>
-							</div>
-						</div>
-
 					</div>
 				</div>
 
