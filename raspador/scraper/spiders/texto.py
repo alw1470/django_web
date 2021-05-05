@@ -1,5 +1,8 @@
 import scrapy
+from scraper.items import CategoriasItem
 from scraper.items import DatosScrapyItem
+from miweb.models import Categorias
+from miweb.models import DatosScrapy
 from scrapy.http import Request
 from .urls_scraper import urls_espana
 import re
@@ -20,6 +23,7 @@ class TextoSpider(scrapy.Spider):
         
     def parse_corte_ingles(self, response):
         item = DatosScrapyItem()
+        item_categorias = CategoriasItem()
         #precio_original = None
 
 
@@ -42,7 +46,14 @@ class TextoSpider(scrapy.Spider):
             print("Oops!  That was no valid number.  Try again...")
             
         marca = response.xpath('//meta[@itemprop="name"]/@content').extract()[3]
+
+
+        item_categorias['title'] = response.xpath('//meta[@itemprop="name"]/@content').extract()[3]
+        #item_categorias['slug'] = response.xpath('//meta[@itemprop="name"]/@content').extract()[3]
+        djangoItem = item_categorias['title']
+        #yield item_categorias
         
+
 
         item['title'] = title
         item['precio_rebajado'] = response.xpath('//p[@class="price _big _sale"]').extract()
@@ -51,8 +62,7 @@ class TextoSpider(scrapy.Spider):
         item['imagen'] = response.xpath('//img/@src').extract()[1]
         item['informacion_adicional'] = informacion_adicional
         item['marca'] = marca
+        item['categoria'] = djangoItem
 
-
-
-        yield item
-    pass
+        
+        yield item 

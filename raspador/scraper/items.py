@@ -7,7 +7,12 @@
 
 import scrapy
 from scrapy_djangoitem import DjangoItem
+from miweb.models import Categorias
 from miweb.models import DatosScrapy
+
+
+class CategoriasItem(DjangoItem):
+    django_model = Categorias
 
 class DatosScrapyItem(DjangoItem):
     django_model = DatosScrapy
